@@ -1,0 +1,13 @@
+#
+# Serial device configuration
+#
+
+menu "My DRIVER"
+	depends on HAS_IOMEM
+
+config STM_MYDRV
+	tristate "This is my drv"
+	depends on ARCH_STM32
+	help
+	  This driver support read and write
+endmenu
